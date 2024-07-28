@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    height: 60px;
+    display: flex;
+    background-color: #0f1111;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.navlog {
+    height: 50px;
+    width: 100px;
+}
+
+.logo {
+    background-image: url("lkogho.jpeg");
+    background-size: cover;
+    height: 50px;
+    width: 100px;
+}
+
+.border {
+    border: 2px solid transparent;
+}
+
+.border:hover {
+    border: 2px solid white;
+}
+
+.addfirst {
+    color: #cccccc;
+    font-size: 0.85rem;
+    margin-left: 15px;
+}
+
+.addsecond {
+    font-size: 1rem;
+    margin-left: 15px;
+}
+
+.address-icon {
+    display: flex;
+    align-items: center;
+}
+
+.navsearch {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(210, 97, 201);
+    width: 100%;
+    max-width: 620px;
+    height: 40px;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+.navsearch:hover {
+    border: 2px solid orange;
+}
+
+.searchselect {
+    background-color: #f3f3f3;
+    width: 50px;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: none;
+}
+
+.search-input {
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+}
+
+.search-icon {
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(240, 213, 5);
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    color: #0f1111;
+}
+
+span {
+    font-size: 0.7rem;
+}
+
+.nav-second {
+    font-size: 0.85rem;
+}
+
+.nav-cart i {
+    font-size: 35px;
+}
+
+.panel {
+    height: 40px;
+    background-color: #222f3d;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.panel-options {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 600px;
+}
+
+.panel-options p {
+    margin: 0 15px;
+}
+
+.hero {
+    background-image: url(main5.gif);
+    height: 350px;
+    width: 100%;
+    max-width: 1450px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero-msg {
+    height: 45x;
+    background-color: rgb(230, 247, 255);
+    
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+}
+
+.shop-sec {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #f7e2e2;
+    padding: 20px 0;
+}
+
+.box {
+    border: 2px solid rgb(16, 2, 2);
+    border-radius: 40px;
+    height: 300px;
+    width: 400px;
+    max-width: 300px;
+    padding: 25px 10px 15px;
+    margin: 15px;
+    color: rgb(222, 141, 236);
+    background-color: rgb(194, 236, 236);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-content h1 {
+    font-size: 25px;
+    color: #0f1111;
+    text-align: center;
+}
+.box-content{background-color: rgb(147, 225, 225);}
+
+.box-img {
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-color: #d1d6db;
+}
+
+footer {
+    background-color: #1d3957;
+    color: #baadadf8;
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.foot-panel1 {
+    background-color: #37475a;
+    color: #fff;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.89rem;
+    cursor: pointer;
+}
+
+.foot-panel1:hover {
+    text-decoration: underline;
+}
+
+.foot-panel2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .navbar, .panel {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navsearch {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .shop-sec {
+        justify-content: center;
+    }
+
+    .box {
+        width: 45%;
+        margin: 15px 2.5%;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .foot-panel2 {
+        width: 100%;
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .box {
+        width: 90%;
+        margin: 10px 5%;
+    }
+
+    .navsearch {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .search-input {
+        width: calc(100% - 50px);
+    }
+
+    .panel-options {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .panel-options p {
+        margin: 5px 0;
+    }
+}
